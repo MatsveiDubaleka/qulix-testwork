@@ -38,16 +38,17 @@ body {
 
 .modal {
   width: 100%;
-  @include flex(center, row, center);
-  .modal-container {
+  @include flex(center, column, center);
+  .modal-wrapper {
     z-index: 1;
     position: relative;
     max-width: 474.37px;
     max-height: 597.21px;
     width: 100vw;
     height: 100vh; // DELETE
-    @include flex(flex-start, column);
-    padding: 32.74px 31.68px 24px;
+    @include flex(flex-start, column, flex-start);
+    padding-top: 32.74px;
+    padding-bottom: 24px;
     border-radius: 23.24px;
     background: #fff;
     div {
@@ -66,6 +67,9 @@ body {
       border-radius: 23.24px;
       transform: rotate(2deg);
     }
+    .modal-container {
+      padding: 0 31.68px;
+    }
   }
 }
 
@@ -74,24 +78,39 @@ h1 {
   font-size: 25.0823px;
   line-height: 32px;
   color: #151515;
+  letter-spacing: 0.2px;
 }
 
 .modal-title {
+  padding-top: 46px;
   width: 100%;
   @include flex(center, row);
-  padding-bottom: 12px;
-  border-bottom: 1px solid #757575;
+  padding-bottom: 11px;
+  border-bottom: 2px solid #757575;
+  input:first-child {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+  }
+}
+
+.modal-description {
+  padding-top: 35px;
+  input {
+    letter-spacing: 0.5px;
+  }
 }
 
 .modal-label {
+  padding-top: 39px;
   @include flex(center, row, space-between);
   .modal-label__heading {
-    width: 200px;
+    width: 191px;
   }
   .label-colors {
     width: auto;
     @include flex(center, row, flex-start);
-    gap: 12px;
+    gap: 13.5px;
     .color-block {
       @include flex(center, row, center);
       width: 28px;
@@ -135,7 +154,9 @@ h1 {
     }
   }
 }
+
 .modal-select {
+  padding-top: 36px;
   position: relative;
   select {
     padding: 0 40px;
@@ -146,21 +167,26 @@ h1 {
     background-repeat: no-repeat;
     border: 0.960366px solid rgba(86, 103, 137, 0.26);
     border-radius: 7.68293px;
+    font-size: 15.3659px;
+    line-height: 20px;
   }
   img {
     width: 40px;
     position: absolute;
-    top: 3px;
+    bottom: 2px;
     right: 0;
   }
 }
 
 .modal-date {
+  padding-top: 33px;
+  padding-bottom: 33px;
   position: relative;
-  @include flex(center, row, space-between);
+  @include flex(center, row, flex-start);
+  gap: 24px;
   .input-date {
     padding-left: 40px;
-    width: 45%;
+    width: 50%;
     border: 0.960366px solid rgba(86, 103, 137, 0.26);
     border-radius: 7.68293px;
     height: 50px;
@@ -168,7 +194,7 @@ h1 {
   .label-date:first-child {
     @include flex(center, row, flex-start);
     gap: 10px;
-    width: 174px;
+    width: 180px;
     position: absolute;
     background-color: #fff;
     left: 10px;
@@ -184,6 +210,9 @@ h1 {
 }
 
 .modal-btns {
+  border-top: 1px solid #9797aa;
+  width: 100%;
+  padding-top: 25px;
   @include flex(center, row, center);
   gap: 20px;
   .btn {

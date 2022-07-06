@@ -42,10 +42,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -53,7 +53,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.modal .modal-container {
+.modal .modal-wrapper {
   z-index: 1;
   position: relative;
   max-width: 474.37px;
@@ -70,17 +70,18 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 32.74px 31.68px 24px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 32.74px;
+  padding-bottom: 24px;
   border-radius: 23.24px;
   background: #fff;
 }
-.modal .modal-container div {
+.modal .modal-wrapper div {
   width: 100%;
 }
-.modal .modal-container:before {
+.modal .modal-wrapper:before {
   z-index: -1;
   content: "";
   top: 0;
@@ -94,15 +95,20 @@ body {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
 }
+.modal .modal-wrapper .modal-container {
+  padding: 0 31.68px;
+}
 
 h1 {
   font-weight: 700;
   font-size: 25.0823px;
   line-height: 32px;
   color: #151515;
+  letter-spacing: 0.2px;
 }
 
 .modal-title {
+  padding-top: 46px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,11 +123,24 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #757575;
+  padding-bottom: 11px;
+  border-bottom: 2px solid #757575;
+}
+.modal-title input:first-child {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+}
+
+.modal-description {
+  padding-top: 35px;
+}
+.modal-description input {
+  letter-spacing: 0.5px;
 }
 
 .modal-label {
+  padding-top: 39px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +156,7 @@ h1 {
           justify-content: space-between;
 }
 .modal-label .modal-label__heading {
-  width: 200px;
+  width: 191px;
 }
 .modal-label .label-colors {
   width: auto;
@@ -154,7 +173,7 @@ h1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 12px;
+  gap: 13.5px;
 }
 .modal-label .label-colors .color-block {
   display: -webkit-box;
@@ -211,6 +230,7 @@ h1 {
 }
 
 .modal-select {
+  padding-top: 36px;
   position: relative;
 }
 .modal-select select {
@@ -222,15 +242,19 @@ h1 {
   background-repeat: no-repeat;
   border: 0.960366px solid rgba(86, 103, 137, 0.26);
   border-radius: 7.68293px;
+  font-size: 15.3659px;
+  line-height: 20px;
 }
 .modal-select img {
   width: 40px;
   position: absolute;
-  top: 3px;
+  bottom: 2px;
   right: 0;
 }
 
 .modal-date {
+  padding-top: 33px;
+  padding-bottom: 33px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,13 +266,14 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 24px;
 }
 .modal-date .input-date {
   padding-left: 40px;
-  width: 45%;
+  width: 50%;
   border: 0.960366px solid rgba(86, 103, 137, 0.26);
   border-radius: 7.68293px;
   height: 50px;
@@ -268,7 +293,7 @@ h1 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 10px;
-  width: 174px;
+  width: 180px;
   position: absolute;
   background-color: #fff;
   left: 10px;
@@ -295,6 +320,9 @@ h1 {
 }
 
 .modal-btns {
+  border-top: 1px solid #9797aa;
+  width: 100%;
+  padding-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
