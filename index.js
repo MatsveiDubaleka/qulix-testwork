@@ -20,3 +20,7 @@ inputText.addEventListener('keyup', () => {
   }
   inputSize.innerHTML = `${size}/100`;
 });
+
+console.log(
+  'Приятного просмотра. Если возникнут какие-нибудь вопросы, то мой телеграмм @MatsveiDubaleka'
+);
