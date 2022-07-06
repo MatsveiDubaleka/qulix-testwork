@@ -183,6 +183,22 @@ h1 {
   }
 }
 
+.modal-btns {
+  @include flex(center, row, center);
+  gap: 20px;
+  .btn {
+    width: 179.54px;
+    height: 55.45px;
+    background: #f5f7fb;
+    border-radius: 10.561px;
+    border: none;
+    &:nth-child(2) {
+      background: #5f65f6;
+      color: #ffffff;
+    }
+  }
+}
+
 // TODO: ADAPTIVE
 // @media (max-width: 768px) {
 // }
