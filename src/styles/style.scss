@@ -27,7 +27,7 @@ body {
   width: 100vw;
   height: 100vh;
   @include flex(center, row);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Public Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -120,7 +120,7 @@ h1 {
     }
     .active-color {
       position: relative;
-      background-image: url(../svg/check.svg);
+      background-image: url(../images/check.svg);
       background-position: center;
       background-repeat: no-repeat;
       &:before {
@@ -141,7 +141,7 @@ h1 {
     padding: 0 40px;
     width: 100%;
     height: 46.1px;
-    background-image: url(../svg/user.svg);
+    background-image: url(../images/user.svg);
     background-position: 15px;
     background-repeat: no-repeat;
     border: 0.960366px solid rgba(86, 103, 137, 0.26);
@@ -152,6 +152,34 @@ h1 {
     position: absolute;
     top: 3px;
     right: 0;
+  }
+}
+
+.modal-date {
+  position: relative;
+  @include flex(center, row, space-between);
+  .input-date {
+    padding-left: 40px;
+    width: 45%;
+    border: 0.960366px solid rgba(86, 103, 137, 0.26);
+    border-radius: 7.68293px;
+    height: 50px;
+  }
+  .label-date:first-child {
+    @include flex(center, row, flex-start);
+    gap: 10px;
+    width: 174px;
+    position: absolute;
+    background-color: #fff;
+    left: 10px;
+  }
+  .label-date:nth-child(2) {
+    @include flex(center, row, flex-start);
+    gap: 10px;
+    width: 174px;
+    position: absolute;
+    background-color: #fff;
+    left: 235px;
   }
 }
 
