@@ -7,6 +7,11 @@
           box-sizing: border-box;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -83,7 +88,7 @@ body {
   height: 100%;
   position: absolute;
   width: 100%;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 23.24px;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
