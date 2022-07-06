@@ -91,4 +91,10 @@ h1 {
   font-size: 25.0823px;
   line-height: 32px;
   color: #151515;
+}
+
+.modal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

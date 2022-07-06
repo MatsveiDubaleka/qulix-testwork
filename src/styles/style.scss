@@ -1,6 +1,13 @@
 @import 'reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
 
+@mixin flex-row($flex-direction: row, $align-items: flex-start) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: space-between;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +70,10 @@ h1 {
   font-size: 25.0823px;
   line-height: 32px;
   color: #151515;
+}
+
+.modal-title {
+  display: flex;
 }
 
 // TODO: ADAPTIVE
