@@ -9,77 +9,80 @@
   </head>
   <body>
     <aside class="modal">
-      <div class="modal-container">
-        <div class="modal-heading">
-          <h1>Create New task</h1>
-        </div>
-        <div class="modal-title">
-          <input
-            type="text"
-            id="title-input"
-            placeholder="Title"
-            autocomplete="off"
-            maxlength="100"
-          />
-          <p>00/100</p>
-        </div>
-        <div class="modal-description">
-          <input
-            type="text"
-            class="text"
-            placeholder="Click to add Description"
-            autocomplete="off"
-          />
-        </div>
-        <div class="modal-label">
-          <p class="modal-label__heading">Label color</p>
-          <div class="label-colors">
-            <div class="gray-color color-block active-color">
-              <input type="radio" name="label-color" class="radio" id="" />
-            </div>
-            <div class="purple-color color-block">
-              <input type="radio" name="label-color" class="radio" />
-            </div>
-            <div class="orange-color color-block">
-              <input type="radio" name="label-color" class="radio" />
-            </div>
-            <div class="black-color color-block">
-              <input type="radio" name="label-color" class="radio" />
-            </div>
-            <div class="yellow-color color-block">
-              <input type="radio" name="label-color" class="radio" />
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <div class="modal-heading">
+            <h1>Create New task</h1>
+          </div>
+          <div class="modal-title">
+            <input
+              type="text"
+              id="title-input"
+              placeholder="Title"
+              autocomplete="off"
+              maxlength="100"
+            />
+            <p>00/100</p>
+          </div>
+          <div class="modal-description">
+            <input
+              type="text"
+              class="text"
+              placeholder="Click to add Description"
+              autocomplete="off"
+            />
+          </div>
+          <div class="modal-label">
+            <p class="modal-label__heading">Label color</p>
+            <div class="label-colors">
+              <div class="gray-color color-block active-color">
+                <input type="radio" name="label-color" class="radio" id="" />
+              </div>
+              <div class="purple-color color-block">
+                <input type="radio" name="label-color" class="radio" />
+              </div>
+              <div class="orange-color color-block">
+                <input type="radio" name="label-color" class="radio" />
+              </div>
+              <div class="black-color color-block">
+                <input type="radio" name="label-color" class="radio" />
+              </div>
+              <div class="yellow-color color-block">
+                <input type="radio" name="label-color" class="radio" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal-select">
-          <select name="select-assignee" id="select-assignee">
-            <option selected value="Select Assignee" disabled>
-              Select Assignee
-            </option>
-          </select>
-          <img src="./src/images/arrow.png" alt="Arrow" />
-        </div>
-        <div class="modal-date">
-          <label for="start-date" class="label-date">
-            <img src="./src/images/calendar.svg" alt="" />
-            <span>12-05-21</span>
-          </label>
-          <label for="start-date" class="label-date">
-            <img src="./src/images/calendar.svg" alt="" />
-            <span>12-05-21</span>
-          </label>
-          <input
-            class="input-date"
-            type="date"
-            id="start-date"
-            value="2021-12-05"
-          />
-          <input
-            class="input-date"
-            type="date"
-            id="end-date"
-            value="2021-12-05"
-          />
+          <div class="modal-select">
+            <select name="select-assignee" id="select-assignee">
+              <option selected value="Select Assignee" disabled>
+                Select Assignee
+              </option>
+            </select>
+            <img src="./src/images/arrow.png" alt="Arrow" />
+          </div>
+          <div class="modal-date">
+            <label for="start-date" class="label-date">
+              <img src="./src/images/calendar.svg" alt="" />
+              <span>12-05-21</span>
+            </label>
+            <label for="start-date" class="label-date">
+              <img src="./src/images/calendar.svg" alt="" />
+              <span>12-05-21</span>
+            </label>
+            <input
+              class="input-date"
+              type="date"
+              id="start-date"
+              value="2021-12-05"
+            />
+            <input
+              class="input-date"
+              type="date"
+              id="end-date"
+              value="2021-12-05"
+            />
+          </div>
+          <div class="modal-line"></div>
         </div>
         <div class="modal-btns">
           <button class="btn">Cancel</button>
