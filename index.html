@@ -19,6 +19,7 @@
             id="title-input"
             placeholder="Title"
             autocomplete="off"
+            maxlength="100"
           />
           <p>00/100</p>
         </div>
@@ -52,8 +53,11 @@
         </div>
         <div class="modal-select">
           <select name="select-assignee" id="select-assignee">
-            <option value="Select Assignee" disabled>Select Assignee</option>
+            <option selected value="Select Assignee" disabled>
+              Select Assignee
+            </option>
           </select>
+          <img src="./src/svg/arrow.png" alt="Arrow" />
         </div>
         <div class="modal-date">
           <input type="date" name="" id="start-date" value="2021-05-12" />
