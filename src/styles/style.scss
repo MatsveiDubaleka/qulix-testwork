@@ -41,6 +41,7 @@ body {
   @include flex(center, row, center);
   border: 2px solid red;
   .modal-container {
+    z-index: 1;
     position: relative;
     max-width: 474.37px;
     max-height: 597.21px;
@@ -54,6 +55,7 @@ body {
       width: 100%;
     }
     &:before {
+      z-index: -1;
       content: '';
       top: 0;
       right: 0;
@@ -78,6 +80,8 @@ h1 {
 .modal-title {
   width: 100%;
   @include flex(center, row);
+  padding-bottom: 12px;
+  border-bottom: 1px solid #757575;
 }
 
 // TODO: ADAPTIVE

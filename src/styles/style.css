@@ -55,6 +55,7 @@ body {
   border: 2px solid red;
 }
 .modal .modal-container {
+  z-index: 1;
   position: relative;
   max-width: 474.37px;
   max-height: 597.21px;
@@ -81,6 +82,7 @@ body {
   width: 100%;
 }
 .modal .modal-container:before {
+  z-index: -1;
   content: "";
   top: 0;
   right: 0;
@@ -116,4 +118,6 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #757575;
 }/*# sourceMappingURL=style.css.map */
