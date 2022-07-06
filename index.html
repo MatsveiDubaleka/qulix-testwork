@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Qulix Test Work</title>
   </head>
   <body>
-    <div class="modal">
+    <aside class="modal">
       <div class="modal-container">
         <div class="modal-heading">
           <h1>Create New Task</h1>
@@ -33,23 +33,47 @@
         <div class="modal-color">
           <input
             type="color"
-            name=""
-            id="label-color__fist"
+            name="label-color__first"
+            id="label-color__first"
             autocomplete="off"
           />
-          <label for="label-color__fist"></label>
+          <label for="label-color__first">
+            <div class="gray-color"></div>
+            <div class="purple-color"></div>
+            <div class="orange-color"></div>
+            <div class="black-color"></div>
+            <div class="yellow-color"></div>
+          </label>
           <input
             type="color"
-            name=""
+            name="label-color__second"
             id="label-color__second"
             autocomplete="off"
           />
-          <label for="label-color__second"></label>
+          <label for="label-color__second">
+            <div class="gray-color"></div>
+            <div class="purple-color"></div>
+            <div class="orange-color"></div>
+            <div class="black-color"></div>
+            <div class="yellow-color"></div>
+          </label>
         </div>
-        <div class="modal-select"></div>
-        <div class="modal-date"></div>
-        <div class="modal-btns"></div>
+        <div class="modal-select">
+          <select name="select-assignee" id="select-assignee">
+            <option value="Select Assignee" disabled>Select Assignee</option>
+          </select>
+        </div>
+        <div class="modal-date">
+          <input type="date" name="" id="start-date" value="2021-05-12" />
+          <label for="start-date"></label>
+          <input type="date" name="" id="end-date" value="2021-05-12" />
+          <label for="end-date"></label>
+        </div>
+        <div class="modal-btns">
+          <button class="btn">Cancel</button>
+          <button class="btn">Save</button>
+        </div>
       </div>
-    </div>
+    </aside>
   </body>
 </html>
