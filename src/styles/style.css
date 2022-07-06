@@ -120,4 +120,93 @@ h1 {
           justify-content: space-between;
   padding-bottom: 12px;
   border-bottom: 1px solid #757575;
+}
+
+.modal-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.modal-label .modal-label__heading {
+  width: 200px;
+}
+.modal-label .label-colors {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 12px;
+}
+.modal-label .label-colors .color-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.modal-label .label-colors .color-block .radio {
+  z-index: -1;
+  width: 28px;
+  height: 28px;
+}
+.modal-label .label-colors .gray-color {
+  background-color: #878c93;
+}
+.modal-label .label-colors .purple-color {
+  background-color: #6153cc;
+}
+.modal-label .label-colors .orange-color {
+  background-color: #ff715b;
+}
+.modal-label .label-colors .black-color {
+  background-color: #151515;
+}
+.modal-label .label-colors .yellow-color {
+  background-color: #ffb627;
+}
+.modal-label .label-colors .active-color {
+  position: relative;
+  background-image: url(../svg/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-label .label-colors .active-color:before {
+  width: 28px;
+  height: 28px;
+  content: "";
+  position: absolute;
+  padding: 4px;
+  border: 1px solid #9797aa;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

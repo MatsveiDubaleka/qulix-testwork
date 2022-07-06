@@ -84,6 +84,59 @@ h1 {
   border-bottom: 1px solid #757575;
 }
 
+.modal-label {
+  @include flex(center, row, space-between);
+  .modal-label__heading {
+    width: 200px;
+  }
+  .label-colors {
+    width: auto;
+    @include flex(center, row, flex-start);
+    gap: 12px;
+    .color-block {
+      @include flex(center, row, center);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      .radio {
+        z-index: -1;
+        width: 28px;
+        height: 28px;
+      }
+    }
+    .gray-color {
+      background-color: #878c93;
+    }
+    .purple-color {
+      background-color: #6153cc;
+    }
+    .orange-color {
+      background-color: #ff715b;
+    }
+    .black-color {
+      background-color: #151515;
+    }
+    .yellow-color {
+      background-color: #ffb627;
+    }
+    .active-color {
+      position: relative;
+      background-image: url(../svg/check.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      &:before {
+        width: 28px;
+        height: 28px;
+        content: '';
+        position: absolute;
+        padding: 4px;
+        border: 1px solid #9797aa;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
 // TODO: ADAPTIVE
 // @media (max-width: 768px) {
 // }
