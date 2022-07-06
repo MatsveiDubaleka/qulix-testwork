@@ -366,4 +366,73 @@ h1 {
   background-color: #ff715b;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .modal .modal-wrapper {
+    max-height: 760px;
+  }
+
+  .modal-label {
+    padding-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal-label .modal-label__heading {
+    width: 100%;
+    text-align: center;
+  }
+  .modal-label .label-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .modal-date {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal-date .input-date {
+    width: 100%;
+  }
+  .modal-date .label-date:first-child {
+    width: 100%;
+    top: 40px;
+    left: 10px;
+  }
+  .modal-date .label-date:nth-child(2) {
+    width: 99%;
+    bottom: 43px;
+    left: 10px;
+  }
+
+  .modal-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */

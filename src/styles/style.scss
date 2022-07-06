@@ -48,7 +48,7 @@ body {
     max-width: 474.37px;
     max-height: 597.21px;
     width: 100vw;
-    height: 100vh; // DELETE
+    height: 100vh;
     @include flex(flex-start, column, flex-start);
     padding-top: 32.74px;
     padding-bottom: 24px;
@@ -243,9 +243,47 @@ h1 {
   }
 }
 
-// TODO: ADAPTIVE
-// @media (max-width: 768px) {
-// }
+@media (max-width: 768px) {
+  .modal .modal-wrapper {
+    max-height: 760px;
+  }
 
-// @media (max-width: 320px) {
-// }
+  .modal-label {
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .modal-label__heading {
+      width: 100%;
+      text-align: center;
+    }
+    .label-colors {
+      @include flex(center, row, center);
+    }
+  }
+
+  .modal-date {
+    flex-direction: column;
+    align-items: center;
+    .input-date {
+      width: 100%;
+    }
+    .label-date:first-child {
+      width: 100%;
+      top: 40px;
+      left: 10px;
+    }
+    .label-date:nth-child(2) {
+      width: 99%;
+      bottom: 43px;
+      left: 10px;
+    }
+  }
+
+  .modal-btns {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 320px) {
+}
