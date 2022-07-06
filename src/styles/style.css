@@ -17,12 +17,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -72,6 +72,9 @@ body {
   border-radius: 23.24px;
   background: #fff;
 }
+.modal .modal-container div {
+  width: 100%;
+}
 .modal .modal-container:before {
   content: "";
   top: 0;
@@ -94,7 +97,18 @@ h1 {
 }
 
 .modal-title {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
