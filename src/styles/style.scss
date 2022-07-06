@@ -21,6 +21,9 @@
 input {
   border: none;
   outline: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 body {
@@ -116,10 +119,16 @@ h1 {
       width: 28px;
       height: 28px;
       border-radius: 50%;
+      transition: 0.5s;
       .radio {
         z-index: -1;
         width: 28px;
         height: 28px;
+      }
+      &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        border: 3px solid #f5f7fb;
       }
     }
     .gray-color {
@@ -221,9 +230,15 @@ h1 {
     background: #f5f7fb;
     border-radius: 10.561px;
     border: none;
+    transition: 1s;
+
     &:nth-child(2) {
       background: #5f65f6;
       color: #ffffff;
+    }
+    &:hover {
+      background-color: #ff715b;
+      transition: 1s;
     }
   }
 }

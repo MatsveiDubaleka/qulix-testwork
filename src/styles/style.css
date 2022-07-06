@@ -11,6 +11,9 @@ input {
   border: none;
   outline: none;
 }
+input:hover {
+  cursor: pointer;
+}
 
 body {
   width: 100vw;
@@ -192,11 +195,19 @@ h1 {
   width: 28px;
   height: 28px;
   border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .modal-label .label-colors .color-block .radio {
   z-index: -1;
   width: 28px;
   height: 28px;
+}
+.modal-label .label-colors .color-block:hover {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 3px solid #f5f7fb;
 }
 .modal-label .label-colors .gray-color {
   background-color: #878c93;
@@ -344,8 +355,15 @@ h1 {
   background: #f5f7fb;
   border-radius: 10.561px;
   border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .modal-btns .btn:nth-child(2) {
   background: #5f65f6;
   color: #ffffff;
+}
+.modal-btns .btn:hover {
+  background-color: #ff715b;
+  -webkit-transition: 1s;
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */
