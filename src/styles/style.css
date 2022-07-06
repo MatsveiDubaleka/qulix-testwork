@@ -52,7 +52,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid red;
 }
 .modal .modal-container {
   z-index: 1;
@@ -209,4 +208,24 @@ h1 {
   padding: 4px;
   border: 1px solid #9797aa;
   border-radius: 50%;
+}
+
+.modal-select {
+  position: relative;
+}
+.modal-select select {
+  padding: 0 40px;
+  width: 100%;
+  height: 46.1px;
+  background-image: url(../svg/user.svg);
+  background-position: 15px;
+  background-repeat: no-repeat;
+  border: 0.960366px solid rgba(86, 103, 137, 0.26);
+  border-radius: 7.68293px;
+}
+.modal-select img {
+  width: 40px;
+  position: absolute;
+  top: 3px;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */
